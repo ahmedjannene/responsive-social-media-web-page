@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tunimedi@</title>
+    <!-- icon cdn -->
+    <link href="https://css.gg/search.css" rel="stylesheet" />
+    <link href="https://css.gg/home-alt.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <!-- ----------navbar--------- -->
+      <div class="container">
+        <h2 class="logo">Tunimedi@</h2>
+        <div class="search-bar">
+          <i class="gg-search search-icon"></i>
+          <input
+            type="search"
+            placeholder="search anything here"
+            id="palceholder"
+          />
+        </div>
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">create</label>
+        </div>
+        <div class="profile-picture">
+          <img src="./assets/images/profile-11.jpg" />
+        </div>
+      </div>
+    </nav>
+    <!-- ----------main------------ -->
+    <main>
+      <div class="container">
+        <!-- ------left part------------ -->
+        <div class="left">
+          <a href="#" class="profile">
+            <div class="profile-picture">
+              <img src="./assets/images/profile-11.jpg" />
+            </div>
+            <div class="handle">
+              <h4>Jack ayi</h4>
+              <p class="text-muted">@Jack</p>
+            </div>
+          </a>
+          <!-- ------------side bar-------- -->
+          <div class="side-bar">
+            <div class="menu-item home">
+              <h4>home</h4>
+              <i class="gg-home-alt"></i>
+            </div>
+            <div class="menu-item Explore">
+              <h4>Explore</h4>
+              <i class="bi bi-compass" id="compass"></i>
+            </div>
+
+            <div class="menu-item notifications" id="notifications">
+              <h4>Notifications</h4>
+              <i class="bi bi-bell" id="bell">
+                <small class="notification-count">9+</small></i
+              >
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-picture">
+                    <img src="./assets/images/profile-1.jpg" />
+                  </div>
+                  <div class="notifications-body">
+                    <b> Keke Benjamin</b> accepted your friend request
+                    <small class="text-muted"> 2 minutes ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./assets/images/profile-2.jpg" />
+                  </div>
+                  <div class="notifications-body">
+                    <b> Elena Morgan</b> commented your post
+                    <small class="text-muted"> 1 hour ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./assets/images/profile-3.jpg" />
+                  </div>
+                  <div class="notifications-body">
+                    <b> Alice Weah</b> reacted to your post
+                    <small class="text-muted"> 4 hours ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-picture">
+                    <img src="./assets/images/profile-8.jpg" />
+                  </div>
+                  <div class="notifications-body">
+                    <b> Mario Rui</b> commented your post
+                    <small class="text-muted"> 1 day ago</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-item messages+ "id="messages-notifications" >
+              <h4>Messages</h4>
+              <i class="bi bi-envelope" id="envelope"
+                ><small class="notification-count"> 6+</small></i
+              >
+            </div>
+            <div class="menu-item bookmarks">
+              <h4>Bookmarks</h4>
+              <i class="bi bi-bookmark" id="bookmark"></i>
+            </div>
+            <div class="menu-item analytics">
+              <h4>Analytics</h4>
+              <i class="bi bi-graph-up" id="graph"></i>
+            </div>
+            <div class="menu-item" id="theme" >
+              <h4>Theme</h4>
+              <i class="bi bi-palette" id="palette"></i>
+            </div>
+            <div class="menu-item settings">
+              <h4>Settings</h4>
+              <i class="bi bi-gear" id="gear"></i>
+            </div>
+          </div>
+          <!-- ---------end of side bar------ -->
+          <div class="create">
+            <label for="create-post" class="btn btn-primary">
+              Create Post
+            </label>
+          </div>
+        </div>
+        <!-- -------------------------------------- -->
+        <!-- ----------middle part----- -->
+        <div class="middle">
+          <!-- -------------Stories--------------- -->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./assets/images/profile-11.jpg" />
+              </div>
+              <p class="name">
+                Your <br />
+                story
+              </p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./assets/images/profile-12.jpg" />
+              </div>
+              <p class="name">
+                Lily <br />
+                James
+              </p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./assets/images/profile-15.jpg" />
+              </div>
+              <p class="name">Mohamed <br />Ramadhan</p>
+            </div>
+            <div class="story">
+              <div class="profile-picture">
+                <img src="./assets/images/profile-18.jpg" />
+              </div>
+              <p class="name">
+                Mamadou <br />
+                Sako
+              </p>
+            </div>
+          </div>
+          <!-- --------------End of stories------- -->
+          <form class="create-post">
+            <div class="profile-picture">
+              <img src="./assets/images/profile-11.jpg" />
+            </div>
+            <input type="text" placeholder="What's on your mind ?" />
+            <input type="submit" value="post" class="btn btn-primary" />
+          </form>
+          <!-- ---------feeds----------------- -->
+          <div class="feeds">
+            <!-- -------------feed 1 ------------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./assets/images/profile-5.jpg" />
+                  </div>
+                  <div class="info">
+                    <h3>Lady Diana</h3>
+                    <samll> London , 15 minutes ago</samll>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bi bi-three-dots"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./assets/images/feed 8.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span> <i class="bi bi-heart"></i></span>
+                  <span> <i class="bi bi-chat"></i></span>
+                  <sapn> <i class="bi bi-send"></i></sapn>
+                </div>
+                <div class="bookmark">
+                  <span> <i class="bi bi-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./assets/images/profile-1.jpg" />
+                </span>
+                <span>
+                  <img src="./assets/images/profile-17.jpg" />
+                </span>
+                <span>
+                  <img src="./assets/images/profile-15.jpg" />
+                </span>
+                <p><b> Liked by Ernest Achiever and 260 others</b></p>
+              </div>
+              <div class="caption">
+                <p><b> Lady Diana </b> Enjoying the view</p>
+              </div>
+              <div class="comments text-muted">view all 120 comments</div>
+            </div>
+            <!-- -------------feed 2 ------------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./assets/images/profile-10.jpg" />
+                  </div>
+                  <div class="info">
+                    <h3>Elena Scott</h3>
+                    <samll> Home , 2 hours ago</samll>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bi bi-three-dots"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./assets/images/feed 9.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span> <i class="bi bi-heart"></i></span>
+                  <span> <i class="bi bi-chat"></i></span>
+                  <sapn> <i class="bi bi-send"></i></sapn>
+                </div>
+                <div class="bookmark">
+                  <span> <i class="bi bi-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./assets/images/profile-17.jpg" />
+                </span>
+                <span>
+                  <img src="./assets/images/profile-7.jpg" />
+                </span>
+                <span>
+                  <img src="./assets/images/profile-14.jpg" />
+                </span>
+                <p><b> Liked by Lea Harir and 160 others</b></p>
+              </div>
+              <div class="caption">
+                <p><b> Elena Scott </b> Casual</p>
+              </div>
+              <div class="comments text-muted">view all 20 comments</div>
+            </div>
+
+            <!-- -------------feed 3 ------------- -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-picture">
+                    <img src="./assets/images/profile 44.jpg" />
+                  </div>
+                  <div class="info">
+                    <h3>Jordi Alba</h3>
+                    <samll> Kiev , 4 hours ago</samll>
+                  </div>
+                </div>
+                <span class="edit">
+                  <i class="bi bi-three-dots"></i>
+                </span>
+              </div>
+
+              <div class="photo">
+                <img src="./assets/images/feed s.jpg" />
+              </div>
+
+              <div class="action-buttons">
+                <div class="interaction-buttons">
+                  <span> <i class="bi bi-heart"></i></span>
+                  <span> <i class="bi bi-chat"></i></span>
+                  <sapn> <i class="bi bi-send"></i></sapn>
+                </div>
+                <div class="bookmark">
+                  <span> <i class="bi bi-bookmark"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span>
+                  <img src="./assets/images/profile-4.jpg" />
+                </span>
+                <span>
+                  <img src="./assets/images/profile-5.jpg" />
+                </span>
+                <span>
+                  <img src="./assets/images/profile-6.jpg" />
+                </span>
+                <p><b> Liked by Selena Gomez and 90 others</b></p>
+              </div>
+              <div class="caption">
+                <p><b> Jordi Alba </b> New set is ready</p>
+              </div>
+              <div class="comments text-muted">view all 50 comments</div>
+            </div>
+          </div>
+        </div>
+        <!-- end of feeds---------------------- -->
+        <!-- --------right part-------- -->
+        <div class="right">
+          <div class="messages" >
+            <div class="heading">
+              <h4>Messages</h4>
+              <i class="bi bi-pencil-square"></i>
+            </div>
+            <!-- -------search bar------------ -->
+            <div class="search-bar">
+              <i class="bi bi-search"></i>
+              <input
+                type="search"
+                placeholder="Search messages"
+                id="message-search"
+              />
+            </div>
+            <!-- --------messages category---------- -->
+            <div class="category">
+              <h6 class="active">primary</h6>
+              <h6>General</h6>
+              <h6 class="messages-requests">Requests (3)</h6>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./assets/images/the rock.jpg" />
+              </div>
+              <div class="message-body">
+                <h5>Therock</h5>
+                <p class="text-muted">blhi nil9ach aandk hoka whey</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./assets/images/profile-20.jpg" />
+              </div>
+              <div class="message-body">
+                <h5>Hajar Baraket</h5>
+                <p class="text-muted">no class for today</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./assets/images/drake.jpg" />
+              </div>
+              <div class="message-body">
+                <h5>champagnepapi</h5>
+                <p class="text-muted">wnk ya bro 3andi se3a nistana fik</p>
+              </div>
+            </div>
+            <div class="message">
+              <div class="profile-picture">
+                <img src="./assets/images/musk.jpg" />
+                <div class="active"></div>
+              </div>
+
+              <div class="message-body">
+                <h5>Elon_musk</h5>
+                <p class="text-muted">wlh me 3andi 10d</p>
+              </div>
+            </div>
+          </div>
+          <!-- ---------end of messages-------- -->
+
+          <!-- ------------friend requests--------- -->
+          <div class="friend-requests">
+            <h4>Requests</h4>
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="./assets/images/profile-7.jpg" />
+                </div>
+                <div>
+                  <h5>Hajia Bintu</h5>
+                  <p class="text-muted">8 mutual friends</p>
+                 
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="./assets/images/dicaprio.jpg" />
+                </div>
+                <div>
+                  <h5>Leo Dicaprio</h5>
+                  <p class="text-muted">22 mutual friends</p>
+                 
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <div class="request">
+              <div class="info">
+                <div class="profile-picture">
+                  <img src="./assets/images/georgina.jpg" />
+                </div>
+                <div>
+                  <h5>Georgina</h5>
+                  <p class="text-muted">10 mutual friends</p>
+                 
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- -------------------end of right----------- -->
+    <!-- ---------------------theme customization--------- -->
+    <div class="customize-theme">
+      <div class="card">
+        <h2> Customize your view </h2>
+        <p class="text-muted"> Manage your font-size , color , and background</p>
+        <!-- ---------Font sizes---------- -->
+        <div class="font-size">
+          <h4> Font size</h4>
+          <div>
+            <h6> Aa</h6>
+            <div class="choose-size">
+              <span class="font-size-1 active"></span>
+              <span class="font-size-2 "></span>
+              <span class="font-size-3"></span>
+              <span class="font-size-4"></span>
+              <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>
+          </div>
+
+        </div>
+        <!-- ---------primary colors----------- -->
+        <div class="color"> 
+          <h4> Color</h4>
+          <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+          </div>
+        </div>
+        <!-- --------------background colors------- -->
+        <div class="background">
+          <h4> Background</h4>
+          <div class="choose-bg">
+            <div class="bg-1 active">
+              <span></span>
+              <h5 for="bg-1">Light</h5>
+            </div>
+            <div class="bg-2">
+              <span></span>
+              <h5 for="bg-2">Dim</h5>
+            </div>
+            <div class="bg-3">
+              <span></span>
+              <h5 for="bg-3">Lights out</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="tunimedia.js"></script>
+  </body>
+</html>
